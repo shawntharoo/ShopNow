@@ -39,11 +39,6 @@
           "EMAIL"
         ]
       },
-      "providerMetadata": {
-        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplify7b8d2570e70e4-staging-01511-deployment/amplify-cfn-templates/auth/shopnow00245b71-cloudformation-template.json",
-        "logicalId": "authshopnow00245b71"
-      },
-      "lastPushTimeStamp": "2022-10-11T04:14:36.549Z",
       "output": {
         "UserPoolId": "us-west-2_AftiozmKS",
         "AppClientIDWeb": "71degjqs6iu8i2bud9pva7ccs1",
@@ -52,6 +47,11 @@
         "UserPoolArn": "arn:aws:cognito-idp:us-west-2:431435831859:userpool/us-west-2_AftiozmKS",
         "IdentityPoolName": "shopnow00245b71_identitypool_00245b71__staging",
         "UserPoolName": "shopnow00245b71_userpool_00245b71"
+      },
+      "lastPushTimeStamp": "2022-10-11T12:07:31.998Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplify7b8d2570e70e4-staging-01511-deployment/amplify-cfn-templates/auth/shopnow00245b71-cloudformation-template.json",
+        "logicalId": "authshopnow00245b71"
       },
       "lastPushDirHash": "xIT3OP6fxfBaaut0NjSm38CDhMs="
     }
@@ -71,15 +71,15 @@
           },
           "additionalAuthenticationProviders": []
         },
-        "GraphQLAPIIdOutput": "otlm5qix3jbcjpkfdyju2rtf6a",
-        "GraphQLAPIEndpointOutput": "https://tdru2744jbgahkz34gym2pku4q.appsync-api.us-west-2.amazonaws.com/graphql",
-        "GraphQLAPIKeyOutput": "da2-ynnvsatgrnbjrftacepifpyfli"
+        "GraphQLAPIIdOutput": "un6lwanzyngjvnqlfte4v7cjvu",
+        "GraphQLAPIEndpointOutput": "https://mi4ievk225f6vn2r6lwqktbzt4.appsync-api.us-west-2.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-evtckifpwbfk7cuxhyjieo64yu"
       },
+      "lastPushTimeStamp": "2022-10-11T12:07:31.998Z",
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplify7b8d2570e70e4-staging-01511-deployment/amplify-cfn-templates/api/cloudformation-template.json",
         "logicalId": "apishopnow"
       },
-      "lastPushTimeStamp": "2022-10-11T04:14:49.106Z",
       "lastPushDirHash": "m+UBMLvELCN+qJzfyjWXk0ZUqGg="
     }
   }

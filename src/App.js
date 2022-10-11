@@ -11,10 +11,10 @@ import {
   View,
   withAuthenticator,
 } from "@aws-amplify/ui-react";
-import { listNotes } from "./graphql/queries";
+import { listTodos } from "./graphql/queries";
 import {
-  createNote as createNoteMutation,
-  deleteNote as deleteNoteMutation,
+  createTodo as createTodoMutation,
+  deleteTodo as deleteTodoMutation,
 } from "./graphql/mutations";
 
 const App = ({ signOut }) => {
@@ -25,12 +25,12 @@ const App = ({ signOut }) => {
   }, []);
 
   async function fetchNotes() {
-    const apiData = await API.graphql({ query: listNotes });
-    const notesFromAPI = apiData.data.listNotes.items;
+    const apiData = await API.graphql({ query: listTodos });
+    const notesFromAPI = apiData.data.listTodos.items;
     setNotes(notesFromAPI);
   }
 
-  async function createNote(event) {
+  async function createTodo(event) {
     event.preventDefault();
     const form = new FormData(event.target);
     const data = {
@@ -38,18 +38,18 @@ const App = ({ signOut }) => {
       description: form.get("description"),
     };
     await API.graphql({
-      query: createNoteMutation,
+      query: createTodoMutation,
       variables: { input: data },
     });
     fetchNotes();
     event.target.reset();
   }
 
-  async function deleteNote({ id }) {
+  async function deleteTodo({ id }) {
     const newNotes = notes.filter((note) => note.id !== id);
     setNotes(newNotes);
     await API.graphql({
-      query: deleteNoteMutation,
+      query: deleteTodoMutation,
       variables: { input: { id } },
     });
   }
@@ -57,7 +57,7 @@ const App = ({ signOut }) => {
   return (
     <View className="App">
       <Heading level={1}>My Notes App</Heading>
-      <View as="form" margin="3rem 0" onSubmit={createNote}>
+      <View as="form" margin="3rem 0" onSubmit={createTodo}>
         <Flex direction="row" justifyContent="center">
           <TextField
             name="name"
@@ -93,7 +93,7 @@ const App = ({ signOut }) => {
               {note.name}
             </Text>
             <Text as="span">{note.description}</Text>
-            <Button variation="link" onClick={() => deleteNote(note)}>
+            <Button variation="link" onClick={() => deleteTodo(note)}>
               Delete note
             </Button>
           </Flex>

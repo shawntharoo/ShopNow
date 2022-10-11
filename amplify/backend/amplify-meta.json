@@ -43,7 +43,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplify7b8d2570e70e4-staging-01511-deployment/amplify-cfn-templates/auth/shopnow00245b71-cloudformation-template.json",
         "logicalId": "authshopnow00245b71"
       },
-      "lastPushTimeStamp": "2022-10-11T10:25:35.908Z",
+      "lastPushTimeStamp": "2022-10-11T21:27:17.946Z",
       "output": {
         "UserPoolId": "us-west-2_AftiozmKS",
         "AppClientIDWeb": "71degjqs6iu8i2bud9pva7ccs1",
@@ -71,15 +71,15 @@
           },
           "additionalAuthenticationProviders": []
         },
-        "GraphQLAPIIdOutput": "otlm5qix3jbcjpkfdyju2rtf6a",
-        "GraphQLAPIEndpointOutput": "https://tdru2744jbgahkz34gym2pku4q.appsync-api.us-west-2.amazonaws.com/graphql",
-        "GraphQLAPIKeyOutput": "da2-ynnvsatgrnbjrftacepifpyfli"
+        "GraphQLAPIIdOutput": "un6lwanzyngjvnqlfte4v7cjvu",
+        "GraphQLAPIEndpointOutput": "https://mi4ievk225f6vn2r6lwqktbzt4.appsync-api.us-west-2.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-evtckifpwbfk7cuxhyjieo64yu"
       },
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplify7b8d2570e70e4-staging-01511-deployment/amplify-cfn-templates/api/cloudformation-template.json",
         "logicalId": "apishopnow"
       },
-      "lastPushTimeStamp": "2022-10-11T10:25:35.913Z",
+      "lastPushTimeStamp": "2022-10-11T21:27:17.950Z",
       "lastPushDirHash": "m+UBMLvELCN+qJzfyjWXk0ZUqGg="
     }
   }
