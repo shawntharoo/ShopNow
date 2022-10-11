@@ -1,0 +1,7 @@
+{
+    "AppSyncApiName": "shopnow",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "S3DeploymentBucket": "amplify-amplify7b8d2570e70e4-staging-01511-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/ecd0e510d9fca244728a04fc00b39607a620187f"
+}
