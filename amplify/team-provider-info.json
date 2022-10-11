@@ -14,6 +14,9 @@
     "categories": {
       "auth": {
         "shopnow00245b71": {}
+      },
+      "api": {
+        "shopnow": {}
       }
     }
   }
